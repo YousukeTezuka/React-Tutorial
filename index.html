@@ -14,7 +14,8 @@
       render: function() {
         return (
           <div className="commentList">
-            Hello world! I am a CommentList.
+            <Comment auther="Pete Hunt">This is one comment</Comment>
+            <Comment auther="Jordan Walke">This is *another* comment</Comment>
           </div>
         );
       }
@@ -41,7 +42,7 @@
         )
       }
     });
-    
+
     React.render(
       <CommentBox />,
       document.getElementById('content')
